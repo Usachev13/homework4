@@ -47,6 +47,7 @@ public class Main {
         }else if (years > 14){
             System.out.println("Если возраст ребенка равен " + years + ", то он может кататься на атракционе без сопровождения взрослого");
         }
+        /* task6 */
         int passenger = 75;
         int wagonCapacity = 102;
         int seatPlace = 60;
@@ -56,6 +57,17 @@ public class Main {
             System.out.println("Если в вагоне " + passenger + " пассажиров, то в вагоне есть и сидячие и стоячие места");
         }else if (wagonCapacity - passenger <= seatPlace){
             System.out.println("Если в вагоне " + passenger + " пассажиров, то в вагоне есть только стоячие места");
+        }
+        /* task7 */
+        int one = 2;
+        int two = 5;
+        int three = 7;
+        if (one > two && one > three){
+            System.out.println("самое большое число " + one);
+        } else if (two > one && two > three) {
+            System.out.println("самое большое число " + two);
+        }else {
+            System.out.println("самое большое число " + three);
         }
     }
 }
