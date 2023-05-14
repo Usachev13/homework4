@@ -21,7 +21,7 @@ public class Main {
         } else {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
         }
-        int yearsOld = 12;
+        int yearsOld = 61;
         if (yearsOld < 2) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему пора спать");
         }
@@ -31,12 +31,21 @@ public class Main {
         if (yearsOld <= 18 && yearsOld >= 7) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему нужно ходить в школу");
         }
-        if (yearsOld > 24) {
+        if (yearsOld > 24 && yearsOld <= 60) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему пора ходить на работу");
         }
         if (yearsOld > 60) {
             System.out.println("Если возраст человека равен " + yearsOld + ", то ему можно отдохнуть");
 
+        }
+        /* task5 */
+        int years = 6;
+        if (years < 5){
+            System.out.println("Если возраст ребенка равен " + years + ", то он не может кататься на атракционе");
+        } if (years > 5 && years < 14){
+            System.out.println("Если возраст ребенка равен " + years + ", то он может кататься на атракционе только в сопровождении взрослого");
+        }if (years > 14){
+            System.out.println("Если возраст ребенка равен " + years + ", то он может кататься на атракционе без сопровождения взрослого");
         }
     }
 }
