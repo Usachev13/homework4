@@ -14,5 +14,13 @@ public class Main {
         } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
+        /* task3 */
+        int speed = 70;
+        if (speed >= 60) {
+            System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
+        }
+        else {
+            System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+        }
     }
 }
