@@ -50,12 +50,11 @@ public class Main {
         int passenger = 75;
         int wagonCapacity = 102;
         int seatPlace = 60;
-        int standingPlace = wagonCapacity - seatPlace;
         if (wagonCapacity <= passenger){
             System.out.println("Если в вагоне " + passenger + " пассажиров, то вагон полностью забит");
-        }else if (wagonCapacity - passenger > 60){
+        }else if (wagonCapacity - passenger > seatPlace){
             System.out.println("Если в вагоне " + passenger + " пассажиров, то в вагоне есть и сидячие и стоячие места");
-        }else if (wagonCapacity - passenger <= 60){
+        }else if (wagonCapacity - passenger <= seatPlace){
             System.out.println("Если в вагоне " + passenger + " пассажиров, то в вагоне есть только стоячие места");
         }
     }
