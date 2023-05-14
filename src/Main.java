@@ -42,10 +42,21 @@ public class Main {
         int years = 6;
         if (years < 5){
             System.out.println("Если возраст ребенка равен " + years + ", то он не может кататься на атракционе");
-        } if (years > 5 && years < 14){
+        }else if (years > 5 && years < 14){
             System.out.println("Если возраст ребенка равен " + years + ", то он может кататься на атракционе только в сопровождении взрослого");
-        }if (years > 14){
+        }else if (years > 14){
             System.out.println("Если возраст ребенка равен " + years + ", то он может кататься на атракционе без сопровождения взрослого");
+        }
+        int passenger = 75;
+        int wagonCapacity = 102;
+        int seatPlace = 60;
+        int standingPlace = wagonCapacity - seatPlace;
+        if (wagonCapacity <= passenger){
+            System.out.println("Если в вагоне " + passenger + " пассажиров, то вагон полностью забит");
+        }else if (wagonCapacity - passenger > 60){
+            System.out.println("Если в вагоне " + passenger + " пассажиров, то в вагоне есть и сидячие и стоячие места");
+        }else if (wagonCapacity - passenger <= 60){
+            System.out.println("Если в вагоне " + passenger + " пассажиров, то в вагоне есть только стоячие места");
         }
     }
 }
